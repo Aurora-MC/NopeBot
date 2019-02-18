@@ -8,7 +8,7 @@ from itertools import cycle
 client = commands.Bot(command_prefix=".")
 client.remove_command("help")
 
-token = "NTQ2MTIwNzk3MjY2MTE2NjIw.D0p-4w.ehHlHOstn-8bEk-nssg3D6RjeUk"
+token = ""
 invite_Link = "https://discordapp.com/api/oauth2/authorize?client_id=546120797266116620&permissions=10240&scope=bot"
 
 server_count = []

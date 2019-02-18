@@ -1,0 +1,2 @@
+# NopeBot
+Simplistic Chat Filter

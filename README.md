@@ -1,2 +1,2 @@
 # NopeBot
-Simplistic Chat Filter
+Simplistic Chat Filter for discord rewrite

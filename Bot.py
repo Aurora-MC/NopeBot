@@ -8,7 +8,7 @@ from itertools import cycle
 client = commands.Bot(command_prefix=".")
 client.remove_command("help")
 
-token = ""
+token = " "
 invite_Link = "https://discordapp.com/api/oauth2/authorize?client_id=546120797266116620&permissions=10240&scope=bot"
 
 server_count = []
@@ -49,6 +49,12 @@ async def on_ready():
     print("\n" + info + " Bot is online in {} Server(s)".format(len(server_count)))
     print(info + " Serving {} members across Discord".format(len(member_count)))
     await change_status()
+
+
+@client.event
+async def on_command_error(ctx, error):
+    if isinstance(error, commands.CommandNotFound):
+        return
 
 
 @client.event
